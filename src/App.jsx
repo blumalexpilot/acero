@@ -12,6 +12,42 @@ const App = () => {
     }
   };
 
+  const specs = [
+    {
+      title: '100% MIUSA',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+          <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
+        </svg>
+      )
+    },
+    {
+      title: '45° KNURLING',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+          <path d="M3 3l18 18M3 21L21 3M9 3l12 12M3 9l12 12M15 3l6 6M3 15l6 6" />
+        </svg>
+      )
+    },
+    {
+      title: '32" UNIVERSAL',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+          <rect x="2" y="7" width="20" height="10" rx="2" />
+          <path d="M7 7v10M17 7v10" />
+        </svg>
+      )
+    },
+    {
+      title: '600LB RATING',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+          <path d="M7 10l5-5 5 5M12 5v14M7 14l5 5 5-5" />
+        </svg>
+      )
+    }
+  ];
+
   return (
     <>
       <style>{`
@@ -148,12 +184,12 @@ const App = () => {
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-20 tracking-tight uppercase">Engineered Standards</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
-              {['100% MIUSA', '45° KNURLING', '32" UNIVERSAL', '600LB RATING'].map((spec) => (
-                <div key={spec} className="flex flex-col items-center">
-                  <div className="w-12 h-12 mb-6 border border-gray-800 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
+              {specs.map((spec) => (
+                <div key={spec.title} className="flex flex-col items-center group cursor-default">
+                  <div className="w-16 h-16 mb-6 border border-gray-800 rounded-full flex items-center justify-center text-gray-500 group-hover:text-white group-hover:border-gray-600 transition-all duration-300">
+                    {spec.icon}
                   </div>
-                  <h3 className="font-bold text-xs tracking-widest uppercase">{spec}</h3>
+                  <h3 className="font-bold text-xs tracking-[0.2em] uppercase">{spec.title}</h3>
                 </div>
               ))}
             </div>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACERO | 100% MIUSA Cold-Pressed Steel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0f0f;
+            color: #f5f5f5;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .steel-gradient {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+        }
+        .accent-border {
+            border-color: #262626;
+        }
+        .cta-button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #f5f5f5;
+            color: #000;
+        }
+        .cta-button:hover {
+            background: #ffffff;
+            transform: scale(1.02);
+        }
+        .knurl-pattern {
+            background-image: radial-gradient(#222 1px, transparent 1px);
+            background-size: 6px 6px;
+        }
+        /* Custom Knurled Separator */
+        .knurled-separator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 2.5rem auto;
+        }
+        .knurled-end {
+            width: 40px;
+            height: 2px;
+            background-image: repeating-linear-gradient(45deg, #444, #444 1px, transparent 1px, transparent 3px);
+            background-size: 4px 4px;
+        }
+        .center-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-6 py-4 border-b accent-border sticky top-0 bg-[#0f0f0f]/95 backdrop-blur-md z-50">
+        <div class="text-2xl font-bold tracking-tighter brand-font">ACERO<span class="text-gray-500">.</span></div>
+        <div class="hidden md:flex space-x-10 text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-400">
+            <a href="#product" class="hover:text-white transition">The Steel</a>
+            <a href="#benefits" class="hover:text-white transition">Wellness</a>
+            <a href="#specs" class="hover:text-white transition">Engineering</a>
+        </div>
+        <a href="#buy" class="text-[10px] bg-white text-black font-bold px-5 py-2.5 hover:bg-gray-200 transition uppercase tracking-[0.15em]">Buy Acero Bar</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden border-b accent-border">
+        <div class="absolute inset-0 opacity-40 knurl-pattern"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <!-- Knurled Separator -->
+            <div class="knurled-separator">
+                <div class="knurled-end"></div>
+                <div class="center-line"></div>
+                <div class="knurled-end"></div>
+            </div>
+            
+            <h1 class="text-6xl md:text-[120px] font-bold mb-8 leading-[0.9] tracking-tighter">PURE STEEL.<br>UNCOMPROMISED.</h1>
+            <p class="text-sm md:text-lg text-gray-400 max-w-2xl mx-auto mb-12 tracking-[0.05em] leading-relaxed uppercase font-light">
+                The only 100% MIUSA cold-pressed raw steel pullup bar.<br>
+                <span class="text-white font-medium mt-2 block">No synthetic coatings. No foam. Just performance.</span>
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="#buy" class="cta-button px-12 py-5 text-sm font-bold uppercase tracking-[0.2em] w-full md:w-auto">Shop the Acero Bar — $85</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Material Difference -->
+    <section id="product" class="py-32 bg-white text-black">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold mb-10 leading-tight">AN HONEST<br>APPROACH TO TOOLS.</h2>
+                    <p class="text-lg mb-12 text-gray-600 leading-relaxed font-light">
+                        Fitness equipment should be as resilient as the people using it. We avoid powder coats and plastic coverings to highlight the natural structural integrity of American steel.
+                    </p>
+                    
+                    <div class="space-y-16">
+                        <div>
+                            <h3 class="text-lg font-bold mb-4 tracking-widest flex items-center">
+                                <span class="mr-4 w-10 h-[2px] bg-black"></span> COLD-PRESSED STEEL
+                            </h3>
+                            <ul class="space-y-5 text-gray-600 ml-14 font-light leading-relaxed">
+                                <li><strong>Structural Integrity:</strong> The cold-pressing process increases the steel's density, allowing a lightweight hollow tube to safely withstand 600+ lbs of tension.</li>
+                                <li><strong>Industrial Precision:</strong> Cold-pressed manufacturing delivers exact tolerances, ensuring the bar remains perfectly seated and balanced within your doorframe.</li>
+                                <li><strong>Authentic Finish:</strong> A smooth, tactile surface that provides a superior connection between the athlete and the tool.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-bold mb-4 tracking-widest flex items-center">
+                                <span class="mr-4 w-10 h-[2px] bg-black"></span> ORGANIC BUTCHER'S WAX
+                            </h3>
+                            <ul class="space-y-5 text-gray-600 ml-14 font-light leading-relaxed">
+                                <li><strong>Organic Barrier:</strong> We protect our steel with natural wax rather than synthetic lacquers, ensuring your training environment remains free from chemical off-gassing.</li>
+                                <li><strong>Moisture Resistance:</strong> Applied during the cooling phase, the wax seals the steel's pores to naturally inhibit oxidation and maintain a pristine finish.</li>
+                                <li><strong>Natural Tactility:</strong> The wax leaves no residue, preserving the high-friction feel of raw metal that athletes prefer for secure grip.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-neutral-100 flex items-center justify-center rounded-sm shadow-2xl border border-neutral-200 overflow-hidden">
+                        <img 
+                            src="https://www.lionscool.com/cdn/shop/files/4-3.jpg?v=1748329643&width=1500" 
+                            alt="Raw American Steel Detail" 
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                        >
+                        <div class="hidden text-center p-8">
+                            <span class="text-neutral-400 tracking-[0.3em] uppercase text-[10px] font-bold">Raw American Steel Detail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Section with Icons -->
+    <section id="specs" class="py-32 border-y accent-border bg-[#0a0a0a]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold mb-4 tracking-tight">ENGINEERED STANDARDS</h2>
+                <p class="text-gray-500 uppercase tracking-[0.2em] text-[10px]">Precision components. Domestic manufacturing.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-12">
+                <!-- 100% MIUSA -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center border border-gray-800 rounded-full text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4.5 9.5 2 17l10 5 10-5-2.5-7.5L12 2z"/></svg>
+                    </div>
+                    <h3 class="font-bold mb-3 tracking-widest text-sm uppercase">100% MIUSA</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Sourced and forged domestically, supporting American craftsmen and ensuring strict quality standards.</p>
+                </div>
+                <!-- KNURLING -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center border border-gray-800 rounded-full text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M3 21L21 3"/></svg>
+                    </div>
+                    <h3 class="font-bold mb-3 tracking-widest text-sm uppercase">45° KNURLING</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Medium-density criss-cross pattern optimized for mechanical grip and long-session comfort.</p>
+                </div>
+                <!-- UNIVERSAL FIT -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center border border-gray-800 rounded-full text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M3 15h18"/></svg>
+                    </div>
+                    <h3 class="font-bold mb-3 tracking-widest text-sm uppercase">32" UNIVERSAL</h3>
+                    <p class="text-xs text-gray-500 leading-loose">Calculated dimensions to provide a secure, non-permanent fit for 99% of US standard doorframes.</p>
+                </div>
+                <!-- 600LB RATING -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center border border-gray-800 rounded-full text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v4h10v-4l-5-5-5 5z"/><path d="M12 14v7"/></svg>
+                    </div>
+                    <h3 class="font-bold mb-3 tracking-widest text-sm uppercase">600LB RATING</h3>
+                    <p class="text-xs text-gray-500 leading-loose">High-strength hollow-bore architecture provides extreme rigidity with a minimal weight profile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits -->
+    <section id="benefits" class="py-32 bg-[#0f0f0f]">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-5xl font-bold mb-16 text-center tracking-tight">THE FUNCTIONAL DIVIDEND</h2>
+            <div class="space-y-12">
+                <div class="grid md:grid-cols-[60px_1fr] gap-8 group">
+                    <span class="text-3xl font-light text-gray-800 group-hover:text-white transition">01</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 uppercase tracking-wider">GRIP & LONGEVITY</h4>
+                        <p class="text-gray-500 leading-relaxed font-light">Grip strength is a primary indicator of overall health. Hanging regularly builds the hand and forearm vitality necessary for a lifetime of physical independence.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[60px_1fr] gap-8 group">
+                    <span class="text-3xl font-light text-gray-800 group-hover:text-white transition">02</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 uppercase tracking-wider">SPINAL ALIGNMENT</h4>
+                        <p class="text-gray-500 leading-relaxed font-light">Decompress the vertebrae naturally. Using gravity to counteract the compressive forces of modern sedentary work helps restore natural spinal posture.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[60px_1fr] gap-8 group">
+                    <span class="text-3xl font-light text-gray-800 group-hover:text-white transition">03</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 uppercase tracking-wider">UPPER BODY SYNCHRONY</h4>
+                        <p class="text-gray-500 leading-relaxed font-light">Build a balanced frame. Pulling movements engage the lats, biceps, and shoulders in a single, compound movement that promotes functional symmetry.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[60px_1fr] gap-8 group">
+                    <span class="text-3xl font-light text-gray-800 group-hover:text-white transition">04</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 uppercase tracking-wider">STABILIZATION & CORE</h4>
+                        <p class="text-gray-500 leading-relaxed font-light">Hanging movements require total core engagement to manage body swing, building a functional, stable midsection far superior to traditional floor work.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-[60px_1fr] gap-8 group">
+                    <span class="text-3xl font-light text-gray-800 group-hover:text-white transition">05</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 uppercase tracking-wider">SHOULDER MOBILITY</h4>
+                        <p class="text-gray-400 leading-relaxed font-light italic">Active hanging strengthens the rotator cuff and small stabilizing muscles, building a "bulletproof" joint that is resilient to injury.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section id="buy" class="py-40 text-center border-t accent-border">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-8xl font-bold mb-10 tracking-tighter">INVEST IN QUALITY.</h2>
+            <p class="text-lg text-gray-500 mb-16 max-w-xl mx-auto tracking-wide uppercase font-light">
+                No plastic. No foam. Just cold-pressed American steel.
+            </p>
+            <div class="inline-block p-1 bg-zinc-900 rounded-sm">
+                <div class="bg-[#0f0f0f] p-12 border border-zinc-800">
+                    <div class="text-5xl font-bold mb-3">$85.00</div>
+                    <div class="text-[10px] text-gray-400 tracking-[0.4em] uppercase mb-10 font-semibold">Free Shipping Included</div>
+                    <button class="cta-button w-full px-16 py-6 text-sm font-black uppercase tracking-[0.3em] mb-4">
+                        Purchase Acero Bar
+                    </button>
+                    <div class="text-[9px] text-gray-600 uppercase tracking-[0.2em] mt-6">Domestic shipping. Limited availability.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t accent-border text-[9px] text-gray-600 tracking-[0.4em] uppercase">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>&copy; 2024 ACERO STRENGTH | BUILT IN USA</div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white">Shipping</a>
+                <a href="#" class="hover:text-white">Contact</a>
+                <a href="#" class="hover:text-white">Quality Guarantee</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
